@@ -1,17 +1,17 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - iOSSnapshotTestCase (3.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 3.0.0)
+  - iOSSnapshotTestCase/Core (3.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (3.0.0):
+    - iOSSnapshotTestCase/Core
   - JJFloatingActionButton (0.9.1)
-  - Nimble (7.0.3)
-  - Nimble-Snapshots (6.3.0):
-    - Nimble-Snapshots/Core (= 6.3.0)
-  - Nimble-Snapshots/Core (6.3.0):
-    - FBSnapshotTestCase (~> 2.0)
+  - Nimble (7.1.1)
+  - Nimble-Snapshots (6.7.0):
+    - Nimble-Snapshots/Core (= 6.7.0)
+  - Nimble-Snapshots/Core (6.7.0):
+    - iOSSnapshotTestCase (~> 3.0)
     - Nimble (~> 7.0)
-  - Quick (1.2.0)
+  - Quick (1.3.0)
 
 DEPENDENCIES:
   - JJFloatingActionButton (from `../`)
@@ -19,17 +19,24 @@ DEPENDENCIES:
   - Nimble-Snapshots
   - Quick
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - iOSSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
+
 EXTERNAL SOURCES:
   JJFloatingActionButton:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  iOSSnapshotTestCase: 23984ffe05289728d646cbb6a7a10b4fb1c93440
   JJFloatingActionButton: 03e8adabad45b5645508dc34c89667575a251a00
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Nimble-Snapshots: d609110ac4ca76ea9de12b20bc5f0efb2127dd61
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
 
 PODFILE CHECKSUM: 8c19971bc03b1102942bae8dc764247c0986032d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
